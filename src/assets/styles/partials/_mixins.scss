@@ -1,0 +1,15 @@
+@mixin dflex ($type) {
+    display: flex;
+
+    @if($type == 'row'){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @else if($type == 'column'){
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}

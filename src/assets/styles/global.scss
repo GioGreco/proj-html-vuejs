@@ -4,6 +4,7 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import '@fortawesome/fontawesome-free/scss/solid.scss';
 @import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
 @import 'bootstrap/scss/bootstrap';
 
 
@@ -11,4 +12,39 @@ $fa-font-path: '../webfonts';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.custom-btn{
+  background-image: $linGrad-lightgreen-palegreen;
+  padding: 5px 30px;
+  color: $white-d1-text;
+  border: none;
+  box-shadow: 0 0 15px 1px $palegreen-bg;
+  transition: background-image .5s, box-shadow 1s;
+
+  &:hover{
+    background-image: $linGrad-lightblack-black100;
+    box-shadow: none;
   }
+}
+
+.custom-separator{
+    span{
+      display: inline-block;
+
+      &:first-of-type{
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        background-image: $linGrad-lightgreen-palegreen;
+        margin-right: 10px;
+      }
+
+      &:last-of-type{
+        height: 10px;
+        width: 70px;
+        border-radius: 10px;
+        background-image: $linGrad-lightgreen-palegreen;
+      }
+    }
+}
