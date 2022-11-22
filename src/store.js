@@ -78,7 +78,37 @@ export const store = reactive({
             name: 'Mighty Furnitures',
             img: '../../public/images/client-5-2x.png'
         }
-
-
-    ]
+    ],
+    quickLinks: [
+        {
+            name: 'Careers',
+            url: '#'
+        },
+        {
+            name: 'News',
+            url: '#'
+        },
+        {
+            name: 'Terms of use',
+            url: '#'
+        },
+        {
+            name: 'Privacy Projects',
+            url: '#'
+        },
+        {
+            name: 'About',
+            url: '#'
+        },
+        {
+            name: 'Contact',
+            url: '#'
+        }
+    ],
+    contacts: {
+        referent: 'Patricia C.Amedee',
+        address: '4401 Waldeck Street Grapevine Nashville, TX 76051',
+        mail: 'info@yourdomain.com',
+        phoneNumber: '+99 (0) 101 0000 888'
+    }
 })
