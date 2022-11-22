@@ -34,6 +34,12 @@
         justify-content: center;
         .top-left{
             width: 45%;
+            h3{
+                font-size: 48px;
+            }
+            span{
+                color: $palegreen-text
+            }
         }
         .top-right{
             width: 55%;

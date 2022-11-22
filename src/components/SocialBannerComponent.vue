@@ -33,6 +33,9 @@
         >*{
             margin: 0 10px;
         }
+        i{
+            cursor: pointer;
+        }
     }
 }
 </style>
