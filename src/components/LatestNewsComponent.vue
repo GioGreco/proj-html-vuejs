@@ -4,8 +4,10 @@
             <h3>Latest News &amp; Our <span>Blog</span></h3>
             <div class="custom-separator"><span></span><span></span></div>
             <div class="row gy-5">
-                <div v-for="(item,index) in store.latestNews" :key="index" class="col-12 col-md-6 col-lg-4 position-relative">
-                    <img :src="item.img" :alt="item.description">
+                <div v-for="(item,index) in store.latestNews" :key="index" class="news col-12 col-md-6 col-lg-4">
+                    <div class="pic-wrapper">
+                        <img :src="item.img" :alt="item.description">
+                    </div>
                     <div class="news-heading">
                         <span>{{parseDate(item.pubblicated)}} - by {{item.author}}</span>
                         <h5>{{item.title}}</h5>
@@ -72,10 +74,23 @@ import {DateTime} from 'luxon';
             padding-right: 0;
         }
 
-        img{
-            height: 335px;
-            width: 100%;
-            border-radius: 15px;
+        .news{
+            position: relative;
+            cursor: pointer;
+            .pic-wrapper{
+                overflow: hidden;
+                border-radius: 15px;
+                img{
+                    height: 335px;
+                    width: 100%;
+                    border-radius: 15px;
+                    transition: transform .2s ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
 
         .news-heading{
