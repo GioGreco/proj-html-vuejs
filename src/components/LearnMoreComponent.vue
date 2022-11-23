@@ -57,7 +57,7 @@
                         height: 100%;
                         border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
-                        background-color: rgba($palegreen-bg, 0.6);
+                        background-color: rgba($palered-bg, 0.6);
                     }
 
                     .pic-front{
