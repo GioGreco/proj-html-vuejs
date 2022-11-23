@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="h-100">
-            <a href="#"><img src="../../public/images/cropped-Group-39-2x.png" alt="Phlox Logo"></a>
+            <a href="#"><img src="/images/cropped-Group-39-2x.png" alt="Phlox Logo"></a>
         </div>
         <BrowseSectionsComponent/>
         <div class="h-100">
