@@ -1,12 +1,11 @@
 <template>
-    <!-- Rendere componente dinamico...slider di diverse quote -->
     <div class="quote">
         <div class="quote-content">
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center" v-motion :initial="{scale: .9}" :visible="{scale: 1.2, transition:{type: 'spring', damping: 50, delay: 500}}">
                 <i class="fa-solid fa-quote-left fs-1"></i>
                 <div class="w-50 text-center fs-5 mt-5">When it comes to barbequing, there are two main schools of thought for the techniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</div>
             </div>
-            <div class="person d-flex flex-column align-items-center">
+            <div class="person d-flex flex-column align-items-center" v-motion :initial="{y: 50, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', damping: 30}}">
                 <div class="person-pic mb-4"></div>
                 <p class="person-name text-uppercase mb-1">Lisa Durbin</p>
                 <span class="person-role">Client</span>

@@ -2,7 +2,7 @@
     <section id="partners">
         <div class="custom-container">
             <div v-for="(item, index) in store.partners" :key="index" class="client">
-                <img :src="item.img" :alt="item.name">
+                <img :src="item.img" :alt="item.name" v-motion :initial="{x: 30, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', damping: 60, delay: index * 200}}">
             </div>
         </div>
     </section>

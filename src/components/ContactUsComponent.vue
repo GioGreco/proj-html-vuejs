@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <section id="contact-us" class="custom-container">
-            <div class="new-project">
+            <div class="new-project" v-motion :initial="{x: -100, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', damping: 30}}">
                 <div class="text-center">
                     <span>Are You Ready?</span>
                     <h4>Start a New project</h4>
@@ -11,7 +11,7 @@
                     <button class="text-uppercase">submit</button>
                 </div>
             </div>
-            <div class="job-talk">
+            <div class="job-talk" v-motion :initial="{x: 100, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', damping: 30}}">
                 <div class="text-center">
                     <span>What Are You Waiting for?</span>
                     <h4>Let's Talk About Work</h4>
@@ -38,6 +38,7 @@
 
 #contact-us{
     @include dflex('row');
+    overflow: hidden;
 
     .new-project{
         @include dflex('column');

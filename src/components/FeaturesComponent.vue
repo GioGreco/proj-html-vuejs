@@ -10,7 +10,7 @@
             </div>
             <div class="features-right">
                 <div class="features-wrap">
-                    <div v-for="(item,index) in store.features" :key="index" class="feature" v-motion :initial="{x: 50, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', mass: 1.5, delay: 500}}">
+                    <div v-for="(item,index) in store.features" :key="index" class="feature" v-motion :initial="{x: 50, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', mass: 1.5, delay: index * 200}}">
                         <i></i>
                         <h6>{{item.type}}</h6>
                         <span>{{item.description}}</span>
@@ -41,6 +41,7 @@ import {store} from '../store.js';
 
     #features{
         background-color: $white-d1-bg;
+        overflow: hidden;
 
         .wrap{
             height: 850px;

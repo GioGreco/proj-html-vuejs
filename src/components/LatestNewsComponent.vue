@@ -1,9 +1,9 @@
 <template>
     <div class="wrap">
         <section id="latest-news" class="custom-container">
-            <h3>Latest News &amp; Our <span>Blog</span></h3>
+            <h3 v-motion :initial="{y: 50, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', damping: 30}}">Latest News &amp; Our <span>Blog</span></h3>
             <div class="custom-separator"><span></span><span></span></div>
-            <div class="row gy-5">
+            <div class="row gy-5" v-motion :initial="{y: 50, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', damping: 30, delay: 200}}">
                 <div v-for="(item,index) in store.latestNews" :key="index" class="news col-12 col-md-6 col-lg-4">
                     <div class="pic-wrapper">
                         <img :src="item.img" :alt="item.description">
