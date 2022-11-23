@@ -31,9 +31,9 @@ ul{
         a{
             text-decoration: none;
             color: $grey-d2-text;
-            font-weight: bold;
+            font-weight: 500;
             &:hover{
-                text-decoration: underline;
+                color: $grey-d1-text;
             }
         }
     }

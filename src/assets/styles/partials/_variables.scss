@@ -17,12 +17,18 @@ $dark-d2-bg: #3d3d3d;
 $dark-d3-bg: #333333; 
 $dark-d4-bg: #191919;
 
+//specials-list:
 $palegreen-bg: #00d9a6;
+$palered-bg: #d2405d;
+$active-special-bg: #d2405d;
+
 $paleblue-bg: #527ceb;
 
 //specials:
 $linGrad-lightgreen-palegreen: linear-gradient(150deg, rgba(195,222,30,1) 20%, rgba(0,217,166,1) 100%);
 $linGrad-lightblack-black100: linear-gradient(150deg, #4c4c4c 20%, rgba(0,0,0,1) 100%);
+$linGrad-lightred-palered: linear-gradient(150deg, rgb(225, 126, 103) 20%, $palered-bg 100%);
+$active-special-lingrad: linear-gradient(150deg, rgb(225, 126, 103) 20%, $palered-bg 100%);
 
 //TEXT COLORS
 $white-d1-text: #f9f9f9; 
@@ -38,7 +44,11 @@ $grey-d6-text: #393939;
 $black-l1-text: #202020; 
 $black-l2-text: #0e0e0e; 
  
+//specials:
 $palegreen-text: #00d9a6;
+$palered-text: #d2405d;
+$active-special-text: #d2405d;
+
 $tourquoise-text: #1bb0ce;
 
 //BORDER COLORS

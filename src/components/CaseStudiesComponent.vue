@@ -12,6 +12,12 @@
             <div class="cases row my-5 g-0">
                 <div v-for="(item,index) in store.caseStudies" :key="index" class="case col-6 col-sm-4 col-md-3">
                     <img :src="item.previewImg" :alt="item.name">
+                    <div class="layover-content">
+                        <div>
+                            <h4>{{item.name}}</h4>
+                            <span class="text-uppercase" v-for="type in item.type" v-motion :initial="{y: 20, opacity: 0}" :visible="{y:0, opacity: 1, transition:{type: 'spring', mass: 1.5, delay: 800}}">{{type}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="custom-btn rounded-pill text-uppercase" v-motion :initial="{y: 40, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', mass: 1.5}}">read more</button>
@@ -53,7 +59,7 @@ export default {
                     font-size: 48px;
                 }
                 span{
-                    color: $palegreen-text
+                    color: $active-special-text
                 }
             }
             .top-right{
@@ -71,48 +77,47 @@ export default {
                 width: calc((100vw - 52px) / 4);
                 height: calc((100vw - 52px) / 4);
                 margin: 1px;
+
+                &:hover img{
+                    transform: scale(1.1);
+                    z-index: 400;
+                }
                 img{
                     position: absolute;
                     height: 100%;
                     width: 100%;
                     border-radius: 5px;
                     transition: transform .3s ease-in-out;
+                    z-index: 300;
+                }
 
-                    &:hover{
-                        transform: scale(1.1);
-                        z-index: 400;
+                &:hover .layover-content{
+                    transform: scale(1.1);
+                    background-color: rgba($palered-bg, 0.842);
+                    z-index: 400;
+                }
+
+                .layover-content{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 5px;
+                    transition: transform .3s ease-in-out, background-color .8s ease-in-out;
+                    color: $white-100;
+
+                    @include dflex('column');
+                    justify-content: flex-end;
+                    padding: 20px;
+
+                    span{
+                        &:not(:last-of-type)::after{
+                            content: '-';
+                            margin: 0 3px;
+                        }
                     }
                 }
             }
         }
     }
-
-    // .case-studies-top{
-    //     @include dflex('row');
-    //     justify-content: center;
-    //     .top-left{
-    //         width: 45%;
-    //         h3{
-    //             font-size: 48px;
-    //         }
-    //         span{
-    //             color: $palegreen-text
-    //         }
-    //     }
-    //     .top-right{
-    //         width: 55%;
-    //         align-self: flex-end;
-    //         padding: 0 20px;
-    //     }
-    // }
-
-    // .cases{
-    //     .case{
-    //         img{
-    //             height: 100%;
-    //             width: 100%;
-    //         }
-    //     }
-    // }
 }
 </style>

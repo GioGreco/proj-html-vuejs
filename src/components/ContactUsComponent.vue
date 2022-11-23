@@ -86,7 +86,7 @@
         height: 315px;
         width: 49%;
         border-radius: 10px;
-        background-image: $linGrad-lightgreen-palegreen;
+        background-image: $active-special-lingrad;
         span{
             color: $grey-d1-text;
         }

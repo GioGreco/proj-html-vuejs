@@ -42,7 +42,7 @@ header{
     }
 
     i{
-        background: -webkit-linear-gradient(150deg, rgba(195,222,30,1) 20%, rgba(0,217,166,1) 100%);
+        background: -webkit-linear-gradient(150deg, rgb(226, 127, 107) 20%, $palered-bg 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;

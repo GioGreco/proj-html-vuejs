@@ -15,11 +15,11 @@ $fa-font-path: '../webfonts';
 }
 
 .custom-btn{
-  background-image: $linGrad-lightgreen-palegreen;
+  background-image: $active-special-lingrad;
   padding: 5px 30px;
   color: $white-d1-text;
   border: none;
-  box-shadow: 0 0 15px 1px $palegreen-bg;
+  box-shadow: 0 0 15px 1px $palered-bg;
   transition: background-image .5s, box-shadow 1s;
 
   &:hover{
@@ -36,7 +36,7 @@ $fa-font-path: '../webfonts';
         height: 10px;
         width: 10px;
         border-radius: 10px;
-        background-image: $linGrad-lightgreen-palegreen;
+        background-image: $active-special-lingrad;
         margin-right: 10px;
       }
 
@@ -44,7 +44,7 @@ $fa-font-path: '../webfonts';
         height: 10px;
         width: 70px;
         border-radius: 10px;
-        background-image: $linGrad-lightgreen-palegreen;
+        background-image: $active-special-lingrad;
       }
     }
 }

@@ -1,9 +1,9 @@
 <template>
     <div class="quote">
         <div class="quote-content">
-            <div class="d-flex flex-column align-items-center" v-motion :initial="{scale: .9}" :visible="{scale: 1.2, transition:{type: 'spring', damping: 50, delay: 500}}">
-                <i class="fa-solid fa-quote-left fs-1"></i>
-                <div class="w-50 text-center fs-5 mt-5">When it comes to barbequing, there are two main schools of thought for the techniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</div>
+            <div class="top d-flex flex-column align-items-center" v-motion :initial="{scale: .9}" :visible="{scale: 1, transition:{type: 'spring', damping: 50, delay: 500}}">
+                <i class="fa-solid fa-quote-left"></i>
+                <div class="w-50 text-center mt-5">When it comes to barbequing, there are two main schools of thought for the techniques that you can use. Freshly scrambled eggs with applewood smoked bacon are amazing!</div>
             </div>
             <div class="person d-flex flex-column align-items-center" v-motion :initial="{y: 50, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', damping: 30}}">
                 <div class="person-pic mb-4"></div>
@@ -42,8 +42,17 @@
         top: 0;
         z-index: 450;
 
+        .top{
+            i{
+                font-size: 48px;
+            }
+            div{
+                font-size: 24px;
+            }
+        }
+
         i, p{
-            color: $palegreen-text;
+            color: $active-special-text;
         }
 
         div, span{

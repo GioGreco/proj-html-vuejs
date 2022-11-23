@@ -48,7 +48,7 @@
                     font-size: 48px;
                 }
                 span{
-                    color: $palegreen-text
+                    color: $active-special-text
                 }
             }
         }

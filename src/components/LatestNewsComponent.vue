@@ -56,7 +56,7 @@ import {DateTime} from 'luxon';
     h3{
         font-size: 48px;
         span{
-            color: $palegreen-text
+            color: $active-special-text
         }
     }
 
@@ -117,7 +117,7 @@ import {DateTime} from 'luxon';
                     height: 7px;
                     width: 7px;
                     border-radius: 50%;
-                    background-color: $palegreen-bg;
+                    background-color: $active-special-bg;
                 }
             }
         }

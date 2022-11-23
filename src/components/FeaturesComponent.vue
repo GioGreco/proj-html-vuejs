@@ -56,7 +56,7 @@ import {store} from '../store.js';
                 }
 
                 span{
-                    color: $palegreen-text
+                    color: $active-special-text
                 }
             }
 

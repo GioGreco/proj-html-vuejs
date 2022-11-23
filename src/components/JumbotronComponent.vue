@@ -72,7 +72,7 @@
                 }
 
                 span{
-                    color: $palegreen-text;
+                    color: $active-special-text;
                 }
 
                 .custom-separator{

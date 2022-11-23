@@ -51,52 +51,44 @@ export const store = reactive({
     ],
     caseStudies: [
         {
-            name: 'Roses.com',
+            name: 'The basket of flowers',
             previewImg: '/images/ina-soulis-227104-unsplash-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding','marketing']
         },
         {
-            name: 'Lunapark.com',
+            name: 'A famous ferry wheel',
             previewImg: '/images/sunisa-misa-531163-unsplash-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['marketing']
         },
         {
-            name: 'Yellowshoes.com',
+            name: 'Complementary colors',
             previewImg: '/images/355H-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding', 'marketing']
         },
         {
-            name: 'Comfyoffice.com',
+            name: 'Business prestige',
             previewImg: '/images/photo-1448932252197-d19750584e56-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding']
         },
         {
-            name: 'Paperboats.com',
+            name: 'Colorful origami boats',
             previewImg: '/images/business-competition-PB366D8-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding']
         },
         {
-            name: 'TheSofa.com',
+            name: 'Modern couch',
             previewImg: '/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['marketing']
         },
         {
-            name: 'Mongo.com',
+            name: 'Hot air balloons',
             previewImg: '/images/aa9a4539-PQGJ7HU-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding','marketing']
         },
         {
-            name: 'TheBlueLemon.com',
+            name: 'Make difference',
             previewImg: '/images/cody-davis-253928-unsplash-1024x1024.jpg',
-            shop: '#',
-            demo: '#'
+            type: ['branding']
         }
     ],
     latestNews: [
