@@ -5,7 +5,7 @@
         </div>
         <BrowseSectionsComponent/>
         <div class="h-100">
-            <button class="custom-btn rounded-pill text-uppercase">Purchase</button>
+            <div class="custom-btn rounded-pill text-uppercase"><div class="text">Purchase</div><div class="layover"></div></div>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </header>

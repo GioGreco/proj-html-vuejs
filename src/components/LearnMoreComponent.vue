@@ -2,8 +2,11 @@
     <section id="learn-more">
         <div class="wrapper">
             <div class="learnMore-left">
-                <img class="pic-behind" src="/images/busy-architect-PYVKWM4-1024x872.jpg" alt="">
-                <!-- <div class="green-layover"></div> -->
+                <!-- <img class="pic-behind" src="/images/busy-architect-PYVKWM4-1024x872.jpg" alt=""> -->
+                <div class="green-layover">
+                    <img class="pic-behind" src="/images/busy-architect-PYVKWM4-1024x872.jpg" alt="">
+                    <!-- <img class="pic-front" src="/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt=""> -->
+                </div>
                 <!-- <img class="pic-front" src="/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt=""> -->
             </div>
             <div class="learnMore-right">
@@ -12,7 +15,7 @@
                     <span></span><span></span>
                 </div>
                 <div>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.</div>
-                <button class="custom-btn rounded-pill text-uppercase mt-5">Read More</button>
+                <div class="custom-btn rounded-pill text-uppercase mt-5"><div class="text">Learn more</div><div class="layover"></div></div>
             </div>
         </div>
     </section>
@@ -37,9 +40,22 @@
 
             .learnMore-left{
                 width: 60%;
-                .pic-behind{
+
+                .green-layover{
                     width: 80%;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    .pic-behind{
+                        width: 100%;
+                        border-top-right-radius: 20px;
+                        border-bottom-right-radius: 20px;
+                    }
                 }
+                // .pic-behind{
+                //     width: 80%;
+                //     border-top-right-radius: 20px;
+                //     border-bottom-right-radius: 20px;
+                // }
             }
 
             .learnMore-right{

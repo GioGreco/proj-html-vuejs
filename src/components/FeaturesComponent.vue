@@ -6,12 +6,12 @@
                 <div class="custom-separator my-4" v-motion :initial="{x: 50, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', mass: 1.5, delay: 300}}">
                     <span></span><span></span>
                 </div>
-                <button class="custom-btn rounded-pill text-uppercase" v-motion :initial="{scale: 1.1}" :visible="{scale: 1, transition: {type: 'spring', mass: 2, delay: 400}}">View All</button>
+                <div class="custom-btn rounded-pill text-uppercase" v-motion :initial="{scale: 1.1}" :visible="{scale: 1, transition: {type: 'spring', mass: 2, delay: 400}}"><div class="text">View all</div><div class="layover"></div></div>
             </div>
             <div class="features-right">
                 <div class="features-wrap">
                     <div v-for="(item,index) in store.features" :key="index" class="feature" v-motion :initial="{x: 50, opacity: 0}" :visible="{x: 0, opacity: 1, transition:{type:'spring', mass: 1.5, delay: index * 200}}">
-                        <i></i>
+                        <i :class="item.icon"></i>
                         <h6>{{item.type}}</h6>
                         <span>{{item.description}}</span>
                     </div>
@@ -74,7 +74,22 @@ import {store} from '../store.js';
                         background-color: $white-100;
                         border-radius: 10px;
                         box-shadow: 0 0 5px 10px $white-d2-bg;
+                        transition: background-color .5s ease-in-out, color .5s ease-in-out;
 
+                        &:hover{
+                            background-image: $active-special-lingrad;
+                            color: $white-d1-text;
+                            i{
+                                color: $white-d1-text;
+                            }
+                        }
+
+                        i{
+                            font-size: 2.5rem;
+                            color: $active-special-text;
+                            margin-bottom: 10px;
+                            transition: color .5s ease-in-out;
+                        }
                         h6{
                             font-size: 24px;
                         }

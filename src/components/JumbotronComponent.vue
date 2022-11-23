@@ -12,7 +12,7 @@
                 <div class="description" v-motion :initial="{scale: 1.1}" :enter="{scale: 1, transition: {type: 'spring', mass: 2}}">
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.
                 </div>
-                <button class="custom-btn rounded-pill text-uppercase" v-motion :initial="{scale: 1.1}" :enter="{scale: 1, transition: {type: 'spring', mass: 2}}">Read More</button>
+                <div class="custom-btn rounded-pill text-uppercase" v-motion :initial="{scale: 1.1}" :enter="{scale: 1, transition: {type: 'spring', mass: 2}}"><div class="text">Read more</div><div class="layover"></div></div>
                 <div class="socials text-uppercase">
                     <span>Facebook</span>
                     <span>Instagram</span>

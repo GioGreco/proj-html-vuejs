@@ -20,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn rounded-pill text-uppercase" v-motion :initial="{y: 40, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', mass: 1.5}}">read more</button>
+            <div class="custom-btn rounded-pill text-uppercase" v-motion :initial="{y: 40, opacity: 0}" :visible="{y: 0, opacity: 1, transition:{type:'spring', mass: 1.5}}"><div class="text">Read more</div><div class="layover"></div></div>
         </div>
     </section>
 </template>

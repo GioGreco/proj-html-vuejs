@@ -31,22 +31,22 @@ export const store = reactive({
         {
             type: 'Speed Optimization',
             description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.',
-            icon: ''
+            icon: 'fa-solid fa-gauge-high'
         },
         {
             type: 'Cloud Solutions',
             description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.',
-            icon: ''
+            icon: 'fa-solid fa-cloud'
         },
         {
             type: 'Website Design',
             description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.',
-            icon: ''
+            icon: 'fa-solid fa-mobile-screen-button'
         },
         {
             type: 'Online Marketing',
             description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind text. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.',
-            icon: ''
+            icon: 'fa-solid fa-stopwatch'
         }
     ],
     caseStudies: [

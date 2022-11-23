@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn rounded-pill text-uppercase">View all post</button>
+            <div class="custom-btn rounded-pill text-uppercase"><div class="text">View all posts</div><div class="layover"></div></div>
         </section>
     </div>
 </template>
@@ -91,35 +91,54 @@ import {DateTime} from 'luxon';
                     }
                 }
             }
-        }
 
-        .news-heading{
-            position: absolute;
-            width: 80%;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 30%);
-            background-color: $white-100;
-            padding: 15px 25px;
-            border-radius: 5px;
-            span{
-                color: $grey-d1-text;
-                font-size: .8rem;
-            }
-            h5{
-                position: relative;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    left: -15px;
-                    top: 50%;
-                    transform: translate(0,-50%);
-                    height: 7px;
-                    width: 7px;
-                    border-radius: 50%;
-                    background-color: $active-special-bg;
+            &:hover .news-heading{
+                background-image: $active-special-lingrad;
+                color: $white-d1-text;
+                transform: translate(-50%, 60%);
+
+                span{
+                    color: $white-d1-text;
+                }
+                h5{
+                    &::before{
+                        background-color: $white-d1-text;
+                    }
                 }
             }
+
+            .news-heading{
+                position: absolute;
+                width: 80%;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 30%);
+                background-color: $white-100;
+                padding: 15px 25px;
+                border-radius: 5px;
+                transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
+                span{
+                    color: $grey-d1-text;
+                    font-size: .8rem;
+                    transition: color .5s ease-in-out;
+                }
+                h5{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: -15px;
+                        top: 50%;
+                        transform: translate(0,-50%);
+                        height: 7px;
+                        width: 7px;
+                        border-radius: 50%;
+                        background-color: $active-special-bg;
+                        transition: background-color .5s ease-in-out;
+                    }
+                }
+            }
+
         }
     }
 

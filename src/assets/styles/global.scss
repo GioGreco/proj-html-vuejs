@@ -16,15 +16,45 @@ $fa-font-path: '../webfonts';
 
 .custom-btn{
   background-image: $active-special-lingrad;
-  padding: 5px 30px;
   color: $white-d1-text;
   border: none;
+  width: 165px;
+  height: 35px;
   box-shadow: 0 0 15px 1px $palered-bg;
+  position: relative;
+  overflow: hidden;
   transition: background-image .5s, box-shadow 1s;
 
-  &:hover{
+  .layover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    border-radius: 50%;
     background-image: $linGrad-lightblack-black100;
+    z-index: 20;
+    transition: transform .5s ease-in-out;
+  }
+
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 25;
+    font-size: .6125rem;
+  }
+
+  &:hover{
     box-shadow: none;
+
+    .layover{
+      transform: scale(200);
+      opacity: 1;
+    }
   }
 }
 

@@ -16,7 +16,7 @@
                     <span>What Are You Waiting for?</span>
                     <h4>Let's Talk About Work</h4>
                 </div>
-                <button class="custom-btn rounded-pill text-uppercase">start now</button>
+                <div class="custom-btn rounded-pill text-uppercase"><div class="text">Start now</div><div class="layover"></div></div>
             </div>
         </section>
     </div>
@@ -93,10 +93,11 @@
         h4{
             font-size: 32px;
         }
-        button{
+        .custom-btn{
             background-image: $linGrad-lightblack-black100;
-            padding: 10px 30px;
-            color: $grey-d1-text
+            .layover{
+                background-image: $active-special-lingrad;
+            }
         }
     }
 }
